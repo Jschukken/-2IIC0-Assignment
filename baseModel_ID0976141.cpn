@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<workspaceElements>
+<generator format="6" tool="Access/CPN" version="1.0.0"/>
+<cpnet>
+<globbox>
+<block id="idblock608">
+<id>Parameters</id>
+<globref id="id23117076">
+<id>gRange</id>
+<ml>250</ml>
+</globref>
+<globref id="id87923951">
+<id>gMaxRides</id>
+<ml>1000</ml>
+</globref>
+<globref id="id57273395">
+<id>gRideWait</id>
+<ml>6.7</ml>
+</globref>
+<globref id="id144405108">
+<id>gTimePerKM</id>
+<ml>3</ml>
+</globref>
+</block>
+<block id="idblock609">
+<id>Types</id>
+<color id="id55837116">
+<id>UNIT</id>
+<unit/>
+</color>
+<color id="id16628359">
+<id>BOOL</id>
+<bool/>
+</color>
+<color id="id40678101">
+<id>INT</id>
+<int/>
+</color>
+<color id="id228617451">
+<id>INTINF</id>
+<intinf/>
+</color>
+<color id="id160346340">
+<id>TIME</id>
+<time/>
+</color>
+<color id="id158205806">
+<id>REAL</id>
+<real/>
+</color>
+<color id="id66548956">
+<id>STRING</id>
+<string/>
+</color>
+<color id="id265037207">
+<id>Coord</id>
+<int>
+<with>
+<ml>1</ml>
+<ml>4</ml>
+</with>
+</int>
+</color>
+<color id="id10767797">
+<id>Loc</id>
+<product>
+<id>Coord</id>
+<id>Coord</id>
+</product>
+</color>
+<color id="id107848500">
+<id>pID</id>
+<timed/>
+<alias>
+<id>INT</id>
+</alias>
+</color>
+<color id="id421219">
+<id>Trip</id>
+<timed/>
+<product>
+<id>pID</id>
+<id>Loc</id>
+<id>Loc</id>
+</product>
+</color>
+<color id="id13129616">
+<id>Goal</id>
+<timed/>
+<product>
+<id>pID</id>
+<id>Loc</id>
+</product>
+</color>
+<color id="id7907970">
+<id>cID</id>
+<timed/>
+<int>
+<with>
+<ml>1</ml>
+<ml>5</ml>
+</with>
+</int>
+</color>
+<color id="id90780479">
+<id>PxIxT</id>
+<product>
+<id>pID</id>
+<id>INT</id>
+<id>STRING</id>
+</product>
+</color>
+</block>
+<block id="idblock610">
+<id>Variables</id>
+<var id="id98669553">
+<type>
+<id>Loc</id>
+</type>
+<id>s</id>
+<id>d</id>
+</var>
+<var id="id243069106">
+<type>
+<id>Coord</id>
+</type>
+<id>x1</id>
+<id>x2</id>
+<id>y1</id>
+<id>y2</id>
+</var>
+<var id="id129618267">
+<type>
+<id>cID</id>
+</type>
+<id>cid</id>
+</var>
+<var id="id268259193">
+<type>
+<id>pID</id>
+</type>
+<id>pid</id>
+</var>
+<var id="id203604639">
+<type>
+<id>INT</id>
+</type>
+<id>i</id>
+</var>
+<var id="id228386575">
+<type>
+<id>STRING</id>
+</type>
+<id>s_time</id>
+</var>
+</block>
+<block id="idblock611">
+<id>Functions</id>
+<ml id="id202187307">val P_HIGH = 100;</ml>
+<ml id="id100099943">val P_NORMAL = 1000;</ml>
+<ml id="id97688679">val P_LOW = 10000;</ml>
+<ml id="id42100797">val maxR = !gRange;</ml>
+<ml id="id96573410">val TPK = !gTimePerKM;</ml>
+<ml id="id121802234">val Sv = (1,1);</ml>
+<ml id="id106909107">fun dist((x1,y1), (x2,y2)) = abs (x1 - x2) + abs (y1 - y2);</ml>
+</block>
+</globbox>
+<page id="id136301748">
+<pageattr name="System"/>
+<place id="id250804014">
+<ellipse h="40.0" w="88.0"/>
+<posattr x="-126.0" y="126.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>new call</text>
+<type id="id250804014a">
+<posattr x="-80.5" y="102.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>Trip</text>
+</type>
+<initmark id="id250804014b">
+<posattr x="-60.0" y="149.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</initmark>
+</place>
+<place id="id168845057">
+<ellipse h="40.0" w="94.0"/>
+<posattr x="-126.0" y="-42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>at
+destination</text>
+<type id="id168845057a">
+<posattr x="-75.0" y="-65.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>Goal</text>
+</type>
+<initmark id="id168845057b">
+<posattr x="-57.0" y="-18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</initmark>
+</place>
+<place id="id150735747">
+<ellipse h="40.0" w="84.0"/>
+<posattr x="210.0" y="126.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>need
+service</text>
+<type id="id150735747a">
+<posattr x="252.0" y="102.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID</text>
+</type>
+<initmark id="id150735747b">
+<posattr x="274.0" y="149.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</initmark>
+</place>
+<place id="id83669530">
+<ellipse h="40.0" w="88.0"/>
+<posattr x="210.0" y="-42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>finished
+service</text>
+<type id="id83669530a">
+<posattr x="253.0" y="-65.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID</text>
+</type>
+<initmark id="id83669530b">
+<posattr x="275.0" y="-18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</initmark>
+</place>
+<trans id="id67393907">
+<box h="246.0" w="135.0"/>
+<posattr x="-281.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>passengers</text>
+<cond id="id67393907a">
+<posattr x="-317.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</cond>
+<time id="id67393907b">
+<posattr x="-245.0" y="66.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</time>
+<code id="id67393907c">
+<posattr x="-245.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</code>
+<subst portsock="(id697885,id250804014)(id153517309,id168845057)" subpage="id193566700">
+<subpageinfo id="id67393907e" name="passengers">
+<posattr x="-317.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text>passengers</text>
+</subpageinfo>
+</subst>
+</trans>
+<trans id="id246794154">
+<box h="234.0" w="149.0"/>
+<posattr x="42.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Red" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Red"/>
+<text>RideShare</text>
+<cond id="id246794154a">
+<posattr x="6.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</cond>
+<time id="id246794154b">
+<posattr x="78.0" y="66.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</time>
+<code id="id246794154c">
+<posattr x="78.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</code>
+<subst portsock="(id15660694,id150735747)(id206969054,id250804014)(id195917054,id83669530)(id129522250,id168845057)" subpage="id52958216">
+<subpageinfo id="id246794154e" name="RideShare">
+<posattr x="6.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text>RideShare</text>
+</subpageinfo>
+</subst>
+</trans>
+<trans id="id25555128">
+<box h="232.0" w="132.0"/>
+<posattr x="378.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>garage</text>
+<cond id="id25555128a">
+<posattr x="342.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</cond>
+<time id="id25555128b">
+<posattr x="414.0" y="66.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</time>
+<code id="id25555128c">
+<posattr x="414.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</code>
+<subst portsock="(id180732408,id150735747)(id210444115,id83669530)" subpage="id11152538">
+<subpageinfo id="id25555128e" name="garage">
+<posattr x="342.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text>garage</text>
+</subpageinfo>
+</subst>
+</trans>
+<arc id="id147042436" order="1" orientation="TtoP">
+<transend idref="id67393907"/>
+<placeend idref="id250804014"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="-210.0" y="126.0"/>
+</bendpoint>
+<annot id="id147042436a">
+<posattr x="-201.0" y="162.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</annot>
+</arc>
+<arc id="id102485993" order="1" orientation="PtoT">
+<transend idref="id67393907"/>
+<placeend idref="id168845057"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="-210.0" y="-42.0"/>
+</bendpoint>
+<annot id="id102485993a">
+<posattr x="-183.0" y="30.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</annot>
+</arc>
+<arc id="id105740191" order="1" orientation="TtoP">
+<transend idref="id246794154"/>
+<placeend idref="id150735747"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="126.0" y="126.0"/>
+</bendpoint>
+<annot id="id105740191a">
+<posattr x="139.0" y="109.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Red" thick="0" type="Solid"/>
+<textattr bold="false" colour="Red"/>
+<text/>
+</annot>
+</arc>
+<arc id="id37538292" order="1" orientation="PtoT">
+<transend idref="id246794154"/>
+<placeend idref="id250804014"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="-42.0" y="126.0"/>
+</bendpoint>
+<annot id="id37538292a">
+<posattr x="57.0" y="98.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Red" thick="0" type="Solid"/>
+<textattr bold="false" colour="Red"/>
+<text/>
+</annot>
+</arc>
+<arc id="id120936652" order="1" orientation="PtoT">
+<transend idref="id246794154"/>
+<placeend idref="id83669530"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="126.0" y="-42.0"/>
+</bendpoint>
+<annot id="id120936652a">
+<posattr x="149.0" y="4.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Red" thick="0" type="Solid"/>
+<textattr bold="false" colour="Red"/>
+<text/>
+</annot>
+</arc>
+<arc id="id147399577" order="1" orientation="TtoP">
+<transend idref="id246794154"/>
+<placeend idref="id168845057"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="-42.0" y="-42.0"/>
+</bendpoint>
+<annot id="id147399577a">
+<posattr x="71.0" y="-30.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Red" thick="0" type="Solid"/>
+<textattr bold="false" colour="Red"/>
+<text/>
+</annot>
+</arc>
+<arc id="id42748291" order="1" orientation="PtoT">
+<transend idref="id25555128"/>
+<placeend idref="id150735747"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="294.0" y="126.0"/>
+</bendpoint>
+<annot id="id42748291a">
+<posattr x="283.0" y="108.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</annot>
+</arc>
+<arc id="id218965435" order="1" orientation="TtoP">
+<transend idref="id25555128"/>
+<placeend idref="id83669530"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="294.0" y="-42.0"/>
+</bendpoint>
+<annot id="id218965435a">
+<posattr x="264.0" y="6.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</annot>
+</arc>
+</page>
+<page id="id193566700">
+<pageattr name="passengers"/>
+<place id="id178217491">
+<ellipse h="40.0" w="60.0"/>
+<posattr x="-252.0" y="294.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>counter</text>
+<type id="id178217491a">
+<posattr x="-216.0" y="270.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>pID</text>
+</type>
+<initmark id="id178217491b">
+<posattr x="-223.0" y="317.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>1</text>
+</initmark>
+</place>
+<place id="id248355095">
+<ellipse h="40.0" w="60.0"/>
+<posattr x="-252.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>on trip</text>
+<type id="id248355095a">
+<posattr x="-213.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>Goal</text>
+</type>
+<initmark id="id248355095b">
+<posattr x="-195.0" y="65.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</initmark>
+</place>
+<place id="id697885">
+<ellipse h="40.0" w="86.0"/>
+<posattr x="-42.0" y="168.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>new call</text>
+<type id="id697885a">
+<posattr x="3.5" y="144.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>Trip</text>
+</type>
+<initmark id="id697885b">
+<posattr x="24.0" y="191.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</initmark>
+<port id="id697885c" type="Out">
+<posattr x="-78.0" y="144.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+<place id="id153517309">
+<ellipse h="40.0" w="98.0"/>
+<posattr x="-42.0" y="-84.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>at
+destination</text>
+<type id="id153517309a">
+<posattr x="10.0" y="-107.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>Goal</text>
+</type>
+<initmark id="id153517309b">
+<posattr x="28.0" y="-60.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</initmark>
+<port id="id153517309c" type="In">
+<posattr x="-78.0" y="-108.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+<place id="id174011004">
+<ellipse h="40.0" w="60.0"/>
+<posattr x="-378.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Gray" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Gray"/>
+<text>measure</text>
+<type id="id174011004a">
+<posattr x="-336.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Gray" thick="0" type="Solid"/>
+<textattr bold="false" colour="Gray"/>
+<text>PxIxT</text>
+</type>
+<initmark id="id174011004b">
+<posattr x="-321.0" y="65.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Gray" thick="0" type="Solid"/>
+<textattr bold="false" colour="Gray"/>
+<text/>
+</initmark>
+</place>
+<trans id="id50139660">
+<box h="50.0" w="76.0"/>
+<posattr x="-252.0" y="168.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>new
+passenger</text>
+<cond id="id50139660a">
+<posattr x="-428.5" y="168.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>[s &lt;&gt; d, s&lt;&gt;Sv, d&lt;&gt;Sv,pid &lt;= !gMaxRides]</text>
+</cond>
+<time id="id50139660b">
+<posattr x="-101.0" y="204.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>@++exponential(1.0/(!gRideWait))</text>
+</time>
+<code id="id50139660c">
+<posattr x="-179.5" y="111.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</code>
+<priority id="id50139660d">
+<posattr x="-328.0" y="132.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</priority>
+</trans>
+<trans id="id181341235">
+<box h="40.0" w="60.0"/>
+<posattr x="-252.0" y="-84.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>end
+trip</text>
+<cond id="id181341235a">
+<posattr x="-291.0" y="-53.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</cond>
+<time id="id181341235b">
+<posattr x="-207.5" y="-53.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</time>
+<code id="id181341235c">
+<posattr x="-187.5" y="-136.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</code>
+<priority id="id181341235d">
+<posattr x="-320.0" y="-115.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</priority>
+</trans>
+<Aux id="id201064823">
+<posattr x="-588.0" y="353.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<label/>
+<text>*****************************
+This page describes the behavior of
+the customer. Do NOT MODIFY this
+page. Use the command below to
+create a reliable simulation report.
+(Right-click&amp;hold &gt; Evaluate ML)
+*****************************</text>
+</Aux>
+<Aux id="id156262342">
+<posattr x="-588.0" y="241.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Red" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Red"/>
+<label/>
+<text>CPN'Replications.nreplications 30</text>
+</Aux>
+<arc id="id178790783" order="1" orientation="TtoP">
+<transend idref="id50139660"/>
+<placeend idref="id248355095"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id178790783a">
+<posattr x="-227.5" y="103.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>(pid,d)</text>
+</annot>
+</arc>
+<arc id="id80912817" order="1" orientation="PtoT">
+<transend idref="id181341235"/>
+<placeend idref="id248355095"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id80912817a">
+<posattr x="-227.5" y="-21.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>(pid,d)</text>
+</annot>
+</arc>
+<arc id="id162031909" order="1" orientation="PtoT">
+<transend idref="id50139660"/>
+<placeend idref="id178217491"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id162031909a">
+<posattr x="-231.5" y="234.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>pid</text>
+</annot>
+</arc>
+<arc id="id118178780" order="1" orientation="TtoP">
+<transend idref="id50139660"/>
+<placeend idref="id178217491"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id118178780a">
+<posattr x="-281.0" y="234.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>pid+1</text>
+</annot>
+</arc>
+<arc id="id229909826" order="1" orientation="TtoP">
+<transend idref="id50139660"/>
+<placeend idref="id697885"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id229909826a">
+<posattr x="-156.0" y="157.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>(pid,s,d)</text>
+</annot>
+</arc>
+<arc id="id118633932" order="1" orientation="PtoT">
+<transend idref="id181341235"/>
+<placeend idref="id153517309"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id118633932a">
+<posattr x="-157.0" y="-73.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>(pid,d)</text>
+</annot>
+</arc>
+<arc id="id234247119" order="1" orientation="TtoP">
+<transend idref="id50139660"/>
+<placeend idref="id174011004"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="-378.0" y="114.0"/>
+</bendpoint>
+<annot id="id234247119a">
+<posattr x="-516.0" y="89.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Gray" thick="0" type="Solid"/>
+<textattr bold="false" colour="Gray"/>
+<text>(pid, dist(s,d), ModelTime.toString (time()))</text>
+</annot>
+</arc>
+<arc id="id53639205" order="1" orientation="PtoT">
+<transend idref="id181341235"/>
+<placeend idref="id174011004"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<bendpoint serial="1">
+<posattr x="-378.0" y="-42.0"/>
+</bendpoint>
+<annot id="id53639205a">
+<posattr x="-423.0" y="-14.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Gray" thick="0" type="Solid"/>
+<textattr bold="false" colour="Gray"/>
+<text>(pid,i,s_time)</text>
+</annot>
+</arc>
+</page>
+<page id="id52958216">
+<pageattr name="RideShare"/>
+<place id="id15660694">
+<ellipse h="40.0" w="94.0"/>
+<posattr x="672.0" y="336.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>need
+service</text>
+<type id="id15660694a">
+<posattr x="718.0" y="312.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID</text>
+</type>
+<initmark id="id15660694b">
+<posattr x="740.0" y="359.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</initmark>
+<port id="id15660694c" type="Out">
+<posattr x="636.0" y="312.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+<place id="id206969054">
+<ellipse h="40.0" w="88.0"/>
+<posattr x="-294.0" y="336.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>new call</text>
+<type id="id206969054a">
+<posattr x="-248.5" y="312.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>Trip</text>
+</type>
+<initmark id="id206969054b">
+<posattr x="-228.0" y="359.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</initmark>
+<port id="id206969054c" type="In">
+<posattr x="-330.0" y="312.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+<place id="id195917054">
+<ellipse h="40.0" w="96.0"/>
+<posattr x="672.0" y="-252.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>finished
+service</text>
+<type id="id195917054a">
+<posattr x="718.0" y="-275.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID</text>
+</type>
+<initmark id="id195917054b">
+<posattr x="740.0" y="-228.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</initmark>
+<port id="id195917054c" type="In">
+<posattr x="636.0" y="-276.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+<place id="id129522250">
+<ellipse h="40.0" w="80.0"/>
+<posattr x="-294.0" y="-252.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Blue" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Blue"/>
+<text>at
+destination</text>
+<type id="id129522250a">
+<posattr x="-248.0" y="-275.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text>Goal</text>
+</type>
+<initmark id="id129522250b">
+<posattr x="-230.0" y="-228.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Blue" thick="0" type="Solid"/>
+<textattr bold="false" colour="Blue"/>
+<text/>
+</initmark>
+<port id="id129522250c" type="Out">
+<posattr x="-330.0" y="-276.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+</page>
+<page id="id11152538">
+<pageattr name="garage"/>
+<place id="id125369000">
+<ellipse h="40.0" w="60.0"/>
+<posattr x="798.0" y="42.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>in service</text>
+<type id="id125369000a">
+<posattr x="832.0" y="18.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID</text>
+</type>
+<initmark id="id125369000b">
+<posattr x="846.0" y="65.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID.all()</text>
+</initmark>
+</place>
+<place id="id180732408">
+<ellipse h="40.0" w="88.0"/>
+<posattr x="630.0" y="168.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>need
+service</text>
+<type id="id180732408a">
+<posattr x="673.0" y="144.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID</text>
+</type>
+<initmark id="id180732408b">
+<posattr x="695.0" y="191.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</initmark>
+<port id="id180732408c" type="In">
+<posattr x="594.0" y="144.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+<place id="id210444115">
+<ellipse h="40.0" w="82.0"/>
+<posattr x="630.0" y="-84.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>finished
+service</text>
+<type id="id210444115a">
+<posattr x="671.0" y="-107.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cID</text>
+</type>
+<initmark id="id210444115b">
+<posattr x="693.0" y="-60.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</initmark>
+<port id="id210444115c" type="Out">
+<posattr x="594.0" y="-108.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Black" thick="0" type="Solid"/>
+<textattr bold="false" colour="Black"/>
+<text/>
+</port>
+</place>
+<trans id="id65277240">
+<box h="40.0" w="60.0"/>
+<posattr x="798.0" y="168.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>start
+service</text>
+<cond id="id65277240a">
+<posattr x="759.0" y="199.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</cond>
+<time id="id65277240b">
+<posattr x="907.5" y="199.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>@++normal(200.0,40.0)</text>
+</time>
+<code id="id65277240c">
+<posattr x="862.5" y="116.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</code>
+<priority id="id65277240d">
+<posattr x="730.0" y="137.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</priority>
+</trans>
+<trans id="id154564232">
+<box h="40.0" w="60.0"/>
+<posattr x="798.0" y="-84.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<text>end
+service</text>
+<cond id="id154564232a">
+<posattr x="759.0" y="-53.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</cond>
+<time id="id154564232b">
+<posattr x="842.5" y="-53.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</time>
+<code id="id154564232c">
+<posattr x="862.5" y="-136.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</code>
+<priority id="id154564232d">
+<posattr x="730.0" y="-115.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text/>
+</priority>
+</trans>
+<Aux id="id118410616">
+<posattr x="603.0" y="294.0"/>
+<fillattr colour="White" filled="false" pattern="filled"/>
+<lineattr colour="Green" pattern="Solid" thick="1"/>
+<textattr bold="false" colour="Green"/>
+<label/>
+<text>*****************************
+This page describes the behavior of
+servicing in the garage. 
+Do NOT MODIFY thispage. 
+*****************************</text>
+</Aux>
+<arc id="id37896750" order="1" orientation="TtoP">
+<transend idref="id65277240"/>
+<placeend idref="id125369000"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id37896750a">
+<posattr x="810.5" y="105.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cid</text>
+</annot>
+</arc>
+<arc id="id77582875" order="1" orientation="PtoT">
+<transend idref="id154564232"/>
+<placeend idref="id125369000"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id77582875a">
+<posattr x="810.5" y="-21.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cid</text>
+</annot>
+</arc>
+<arc id="id153108709" order="1" orientation="PtoT">
+<transend idref="id65277240"/>
+<placeend idref="id180732408"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id153108709a">
+<posattr x="721.0" y="179.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Teal" thick="0" type="Solid"/>
+<textattr bold="false" colour="Teal"/>
+<text>cid</text>
+</annot>
+</arc>
+<arc id="id266970805" order="1" orientation="TtoP">
+<transend idref="id154564232"/>
+<placeend idref="id210444115"/>
+<lineattr colour="" thick="1" type="Solid"/>
+<annot id="id266970805a">
+<posattr x="720.0" y="-73.0"/>
+<fillattr colour="White" filled="false" pattern="Solid"/>
+<lineattr colour="Green" thick="0" type="Solid"/>
+<textattr bold="false" colour="Green"/>
+<text>cid</text>
+</annot>
+</arc>
+</page>
+<instances>
+<instance id="id136301748itop" page="id136301748">
+<instance id="id67393907ia" trans="id67393907"/>
+<instance id="id246794154ia" trans="id246794154"/>
+<instance id="id25555128ia" trans="id25555128"/>
+</instance>
+</instances>
+<monitorblock name="Monitors">
+<monitor disabled="false" id="ID1439529609" name="Cars in service" type="0">
+<node idref="id154564232" pageinstanceidref="id25555128ia"/>
+<node idref="id125369000" pageinstanceidref="id25555128ia"/>
+<node idref="id65277240" pageinstanceidref="id25555128ia"/>
+<option name="Disabled" value="false"/>
+<option name="Timed" value="false"/>
+<option name="Logging" value="true"/>
+</monitor>
+<monitor disabled="false" id="ID1439528558" name="Passengers on trip" type="0">
+<node idref="id181341235" pageinstanceidref="id67393907ia"/>
+<node idref="id50139660" pageinstanceidref="id67393907ia"/>
+<node idref="id248355095" pageinstanceidref="id67393907ia"/>
+<option name="Disabled" value="false"/>
+<option name="Timed" value="false"/>
+<option name="Logging" value="true"/>
+</monitor>
+<monitor disabled="false" id="ID1439615081" name="Travel time dist 1 to 3" type="3">
+<node idref="id181341235" pageinstanceidref="id67393907ia"/>
+<declaration name="Predicate">
+<ml id="ID1439615081c">fun pred (bindelem) = 
+let
+  fun predBindElem (passengers'end_trip (1, {d, i,pid,s_time})) = (i &lt;= 3)
+      | predBindElem _ = false
+in
+  predBindElem bindelem  
+end</ml>
+</declaration>
+<declaration name="Observer">
+<ml id="ID1439615081d">fun obs (bindelem) = 
+let
+  fun obsBindElem (passengers'end_trip (1, 
+                               {d, i,pid,s_time})) = time()-Option.valOf(ModelTime.fromString s_time)
+      | obsBindElem _ = 0.0
+in
+  obsBindElem bindelem  
+end</ml>
+</declaration>
+<declaration name="Init function">
+<ml id="ID1439615081a">fun init () = 
+  NONE</ml>
+</declaration>
+<declaration name="Stop">
+<ml id="ID1439615081b">fun stop () = 
+  NONE</ml>
+</declaration>
+<option name="Disabled" value="false"/>
+<option name="Timed" value="false"/>
+<option name="Logging" value="true"/>
+</monitor>
+<monitor disabled="false" id="ID1439620515" name="Travel time dist 4 to 6" type="3">
+<node idref="id181341235" pageinstanceidref="id67393907ia"/>
+<declaration name="Predicate">
+<ml id="ID1439620515c">fun pred (bindelem) = 
+let
+  fun predBindElem (passengers'end_trip (1, {d,i,pid,s_time})) = (i&gt;3 andalso i &lt;= 6)
+      | predBindElem _ = false
+in
+  predBindElem bindelem  
+end</ml>
+</declaration>
+<declaration name="Observer">
+<ml id="ID1439620515d">fun obs (bindelem) = 
+let
+  fun obsBindElem (passengers'end_trip (1, 
+                               {d,i,pid,s_time})) = time()-Option.valOf(ModelTime.fromString s_time)
+      | obsBindElem _ = 0.0
+in
+  obsBindElem bindelem  
+end</ml>
+</declaration>
+<declaration name="Init function">
+<ml id="ID1439620515a">fun init () = 
+  NONE</ml>
+</declaration>
+<declaration name="Stop">
+<ml id="ID1439620515b">fun stop () = 
+  NONE</ml>
+</declaration>
+<option name="Disabled" value="false"/>
+<option name="Timed" value="false"/>
+<option name="Logging" value="true"/>
+</monitor>
+<monitor disabled="false" id="ID1439683103" name="Travel time too long" type="3">
+<node idref="id181341235" pageinstanceidref="id67393907ia"/>
+<declaration name="Predicate">
+<ml id="ID1439683103c">fun pred (bindelem) = 
+let
+  fun predBindElem (passengers'end_trip (1, {d,i, pid,s_time}))
+         = (time()-Option.valOf(ModelTime.fromString s_time)) &gt; (real (5*(TPK*i+2)))
+      | predBindElem _ = false
+in
+  predBindElem bindelem  
+end</ml>
+</declaration>
+<declaration name="Observer">
+<ml id="ID1439683103d">fun obs (bindelem) = 
+let
+  fun obsBindElem (passengers'end_trip (1, 
+                               {d,i,pid,s_time})) = time()-Option.valOf(ModelTime.fromString s_time)
+      | obsBindElem _ = 0.0
+in
+  obsBindElem bindelem  
+end</ml>
+</declaration>
+<declaration name="Init function">
+<ml id="ID1439683103a">fun init () = 
+  NONE</ml>
+</declaration>
+<declaration name="Stop">
+<ml id="ID1439683103b">fun stop () = 
+  NONE</ml>
+</declaration>
+<option name="Disabled" value="false"/>
+<option name="Timed" value="false"/>
+<option name="Logging" value="true"/>
+</monitor>
+</monitorblock>
+<options>
+<option name="realtimestamp">
+<value>
+<boolean>true</boolean>
+</value>
+</option>
+</options>
+</cpnet>
+</workspaceElements>
