@@ -115,6 +115,18 @@
           </product>
         </color>
       </block>
+      <block id="ID1439801629">
+        <id>MyTypes</id>
+        <color id="ID1439802103">
+          <id>Car</id>
+          <product>
+            <id>cID</id>
+            <id>INT</id>
+            <id>Loc</id>
+          </product>
+          <layout>colset Car = product cID * INT * Loc;</layout>
+        </color>
+      </block>
       <block id="idblock610">
         <id>Variables</id>
         <var id="id98669553">
@@ -130,8 +142,11 @@
           </type>
           <id>x1</id>
           <id>x2</id>
+          <id>x3</id>
           <id>y1</id>
           <id>y2</id>
+          <id>y3</id>
+          <layout>var x1, x2, x3, y1, y2, y3: Coord;</layout>
         </var>
         <var id="id129618267">
           <type>
@@ -156,6 +171,13 @@
             <id>STRING</id>
           </type>
           <id>s_time</id>
+        </var>
+        <var id="ID1439809142">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>trips</id>
+          <layout>var trips: INT;</layout>
         </var>
       </block>
       <block id="idblock611">
@@ -2037,8 +2059,8 @@ destination</text>
         </port>
       </place>
       <place id="ID1439684188">
-        <posattr x="-84.000000"
-                 y="139.000000"/>
+        <posattr x="-232.000000"
+                 y="65.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -2061,8 +2083,8 @@ _PASSENGERS</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1439684189">
-          <posattr x="-47.500000"
-                   y="115.000000"/>
+          <posattr x="-195.500000"
+                   y="41.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2075,8 +2097,8 @@ _PASSENGERS</text>
                 version="4.0.1">Trip</text>
         </type>
         <initmark id="ID1439684190">
-          <posattr x="-27.000000"
-                   y="162.000000"/>
+          <posattr x="-175.000000"
+                   y="88.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2090,7 +2112,7 @@ _PASSENGERS</text>
         </initmark>
       </place>
       <place id="ID1439684248">
-        <posattr x="126.000000"
+        <posattr x="410.000000"
                  y="266.000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -2114,7 +2136,7 @@ _CARS</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1439684249">
-          <posattr x="160.000000"
+          <posattr x="445.000000"
                    y="242.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2125,10 +2147,10 @@ _CARS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cID</text>
+                version="4.0.1">Car</text>
         </type>
         <initmark id="ID1439684250">
-          <posattr x="182.000000"
+          <posattr x="466.000000"
                    y="289.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2143,8 +2165,8 @@ _CARS</text>
         </initmark>
       </place>
       <place id="ID1439684320">
-        <posattr x="84.000000"
-                 y="142.000000"/>
+        <posattr x="233.000000"
+                 y="42.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -2167,8 +2189,8 @@ _CARS</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1439684321">
-          <posattr x="118.000000"
-                   y="116.000000"/>
+          <posattr x="268.000000"
+                   y="16.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2178,11 +2200,11 @@ _CARS</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cID</text>
+                version="4.0.1">Car</text>
         </type>
         <initmark id="ID1439684322">
-          <posattr x="140.000000"
-                   y="167.000000"/>
+          <posattr x="289.000000"
+                   y="67.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2204,7 +2226,7 @@ _CARS</text>
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>PICK_UP_
@@ -2214,7 +2236,7 @@ PASSENGER</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1439684711">
-          <posattr x="-39.000000"
+          <posattr x="-69.500000"
                    y="241.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2225,10 +2247,10 @@ PASSENGER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">[trips&lt;120]</text>
         </cond>
         <time id="ID1439684712">
-          <posattr x="44.500000"
+          <posattr x="48.500000"
                    y="241.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2239,7 +2261,7 @@ PASSENGER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">@+1</text>
         </time>
         <code id="ID1439684713">
           <posattr x="64.500000"
@@ -2273,13 +2295,13 @@ PASSENGER</text>
       <trans id="ID1439685149"
              explicit="false">
         <posattr x="0.000000"
-                 y="65.000000"/>
+                 y="-94.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>DROP_OFF
@@ -2290,7 +2312,7 @@ _PASSENGER</text>
                  y="-3.000000"/>
         <cond id="ID1439685150">
           <posattr x="-39.000000"
-                   y="96.000000"/>
+                   y="-63.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2303,8 +2325,8 @@ _PASSENGER</text>
                 version="4.0.1"/>
         </cond>
         <time id="ID1439685151">
-          <posattr x="44.500000"
-                   y="96.000000"/>
+          <posattr x="48.500000"
+                   y="-63.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2314,11 +2336,11 @@ _PASSENGER</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">@+1</text>
         </time>
         <code id="ID1439685152">
           <posattr x="64.500000"
-                   y="13.000000"/>
+                   y="-146.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2332,7 +2354,7 @@ _PASSENGER</text>
         </code>
         <priority id="ID1439685154">
           <posattr x="-68.000000"
-                   y="34.000000"/>
+                   y="-125.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2354,7 +2376,7 @@ _PASSENGER</text>
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>NEED_
@@ -2364,7 +2386,7 @@ SERVICE</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1439687949">
-          <posattr x="633.000000"
+          <posattr x="533.000000"
                    y="297.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2375,7 +2397,7 @@ SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">[(x3,y3)= Sv andalso trips&gt;=120]</text>
         </cond>
         <time id="ID1439687950">
           <posattr x="716.500000"
@@ -2429,7 +2451,7 @@ SERVICE</text>
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>FINISHED
@@ -2526,7 +2548,7 @@ _SERVICE</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1439684848">
-          <posattr x="46.000000"
+          <posattr x="194.000000"
                    y="277.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2537,7 +2559,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cid</text>
+                version="4.0.1">(cid, trips,(x3,y3))</text>
         </annot>
       </arc>
       <arc id="ID1439684992"
@@ -2559,7 +2581,7 @@ _SERVICE</text>
         <placeend idref="ID1439684188"/>
         <bendpoint id="ID1439691594"
                    serial="1">
-          <posattr x="-84.000000"
+          <posattr x="-232.000000"
                    y="210.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2571,8 +2593,8 @@ _SERVICE</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1439684993">
-          <posattr x="-114.000000"
-                   y="188.000000"/>
+          <posattr x="-298.500000"
+                   y="156.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2582,7 +2604,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(pid,s,d)</text>
+                version="4.0.1">(pid,(x1,y1),(x2,y2))</text>
         </annot>
       </arc>
       <arc id="ID1439685069"
@@ -2616,8 +2638,8 @@ _SERVICE</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1439685070">
-          <posattr x="57.000000"
-                   y="221.000000"/>
+          <posattr x="100.000000"
+                   y="222.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2627,7 +2649,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cid</text>
+                version="4.0.1">(cid, trips,(x3,y3))</text>
         </annot>
       </arc>
       <arc id="ID1439685322"
@@ -2649,8 +2671,8 @@ _SERVICE</text>
         <placeend idref="ID1439684188"/>
         <bendpoint id="ID1439693609"
                    serial="1">
-          <posattr x="-84.000000"
-                   y="65.000000"/>
+          <posattr x="-232.000000"
+                   y="-84.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2661,8 +2683,8 @@ _SERVICE</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1439685323">
-          <posattr x="-114.000000"
-                   y="84.000000"/>
+          <posattr x="-222.000000"
+                   y="-113.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2672,7 +2694,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(pid,s,d)</text>
+                version="4.0.1">(pid,(x1,y1),(x2,y2))</text>
         </annot>
       </arc>
       <arc id="ID1439685411"
@@ -2694,8 +2716,8 @@ _SERVICE</text>
         <placeend idref="ID1439684320"/>
         <bendpoint id="ID1439693849"
                    serial="1">
-          <posattr x="84.000000"
-                   y="65.000000"/>
+          <posattr x="233.000000"
+                   y="-84.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2706,8 +2728,8 @@ _SERVICE</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1439685412">
-          <posattr x="58.000000"
-                   y="76.000000"/>
+          <posattr x="144.000000"
+                   y="-73.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2717,7 +2739,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cid</text>
+                version="4.0.1">(cid, trips,(x3,y3))</text>
         </annot>
       </arc>
       <arc id="ID1439685503"
@@ -2739,8 +2761,8 @@ _SERVICE</text>
         <placeend idref="ID1439684248"/>
         <bendpoint id="ID1439685505"
                    serial="1">
-          <posattr x="126.000000"
-                   y="55.000000"/>
+          <posattr x="420.000000"
+                   y="-94.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2751,8 +2773,8 @@ _SERVICE</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1439685504">
-          <posattr x="57.000000"
-                   y="44.000000"/>
+          <posattr x="282.000000"
+                   y="-100.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2762,7 +2784,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cid</text>
+                version="4.0.1">(cid, trips,(x3,y3))</text>
         </annot>
       </arc>
       <arc id="ID1439687647"
@@ -2807,7 +2829,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(pid,s,d)</text>
+                version="4.0.1">(pid,(x1,y1),(x2,y2))</text>
         </annot>
       </arc>
       <arc id="ID1439688594"
@@ -2828,7 +2850,7 @@ _SERVICE</text>
         <transend idref="ID1439687948"/>
         <placeend idref="ID1439684248"/>
         <annot id="ID1439688595">
-          <posattr x="399.000000"
+          <posattr x="541.000000"
                    y="277.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2839,7 +2861,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cid</text>
+                version="4.0.1">(cid, trips,(x3,y3))</text>
         </annot>
       </arc>
       <arc id="ID1439688761"
@@ -2950,7 +2972,7 @@ _SERVICE</text>
                     bold="false"/>
         </bendpoint>
         <annot id="ID1439689105">
-          <posattr x="398.000000"
+          <posattr x="531.000000"
                    y="241.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2961,7 +2983,7 @@ _SERVICE</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cid</text>
+                version="4.0.1">(cid, 0,(1,1))</text>
         </annot>
       </arc>
       <arc id="ID1439798953"
@@ -2996,7 +3018,7 @@ _SERVICE</text>
         </bendpoint>
         <annot id="ID1439798954">
           <posattr x="24.500000"
-                   y="-104.000000"/>
+                   y="-183.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3527,17 +3549,12 @@ Do NOT MODIFY thispage.
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10005.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -3547,7 +3564,12 @@ Do NOT MODIFY thispage.
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -3750,14 +3772,14 @@ Do NOT MODIFY thispage.
     </options>
     <binders>
       <cpnbinder id="ID1439684050"
-                 x="366"
-                 y="43"
+                 x="464"
+                 y="42"
                  width="1637"
                  height="836">
         <sheets>
           <cpnsheet id="ID1439684032"
                     panx="412.000000"
-                    pany="135.000000"
+                    pany="149.000000"
                     zoom="1.000000"
                     instance="id67393907ia">
             <zorder>
@@ -3765,9 +3787,9 @@ Do NOT MODIFY thispage.
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1439684063"
-                    panx="51.000000"
-                    pany="34.000000"
-                    zoom="1.000000"
+                    panx="-243.000000"
+                    pany="46.000000"
+                    zoom="1.251497"
                     instance="id246794154ia">
             <zorder>
               <position value="0"/>
@@ -4008,7 +4030,7 @@ end</ml>
       </IndexNode>
       <IndexNode expanded="true">
         <IndexNode expanded="true">
-          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
@@ -4029,22 +4051,26 @@ end</ml>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
         </IndexNode>
-        <IndexNode expanded="false">
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
+        <IndexNode expanded="true">
+          <IndexNode expanded="true"/>
         </IndexNode>
-        <IndexNode expanded="false">
+        <IndexNode expanded="true">
           <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="true">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
         </IndexNode>
       </IndexNode>
       <IndexNode expanded="true">
