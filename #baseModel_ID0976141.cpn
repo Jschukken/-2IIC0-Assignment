@@ -280,10 +280,10 @@
         <ml id="id121802234">val Sv = (1,1);</ml>
         <ml id="id106909107">fun dist((x1,y1), (x2,y2)) = abs (x1 - x2) + abs (y1 - y2);</ml>
         <ml id="ID1439999636">fun totalDist(nil,_) = 0 |
- totalDist(((trip1:Trip)::tList),s) = dist(s,#2trip1)+
+ totalDist(((trip1:Trip)::tList),s) = dist(s,#3trip1)+
 totalDist(tList,s) ;
           <layout>fun totalDist(nil,_) = 0 |
- totalDist(((trip1:Trip)::tList),s) = dist(s,#2trip1)+
+ totalDist(((trip1:Trip)::tList),s) = dist(s,#3trip1)+
 totalDist(tList,s) ;</layout>
         </ml>
       </block>
@@ -2865,7 +2865,7 @@ CARPOOL</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1439976619">
-          <posattr x="-967.500000"
+          <posattr x="-918.000000"
                    y="48.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2878,15 +2878,15 @@ CARPOOL</text>
           <text tool="CPN Tools"
                 version="4.0.1">[#2(hd (#2cPool))=(x1,y1)
 andalso 
-#3(#1cPool) &gt;= dist(#4(#1cPool),#2(hd (#2cPool)))+
+#3(#1cPool) &gt;=
 totalDist(#2cPool ,#2(hd (#2cPool)))+
 dist((x2,y2),(1,1))
 andalso 
 (length (#2cPool)) &lt;4]</text>
         </cond>
-        <time id="ID1439955893">
-          <posattr x="-753.500000"
-                   y="55.000000"/>
+        <time id="ID1440305413">
+          <posattr x="-688.500000"
+                   y="70.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2896,7 +2896,7 @@ andalso
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">@+dist(#4(#1cPool),(x1,y1))</text>
         </time>
         <code id="ID1439998475">
           <posattr x="-733.500000"
@@ -2946,8 +2946,8 @@ CARPOOL</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1440051407">
-          <posattr x="-555.000000"
-                   y="300.000000"/>
+          <posattr x="-342.000000"
+                   y="314.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2957,7 +2957,7 @@ CARPOOL</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">[charge&gt;=dist((x1,y1),(x3,y3))+dist((x2,y2),(1,1))]</text>
         </cond>
         <time id="ID1439955618">
           <posattr x="-599.000000"
@@ -3011,7 +3011,7 @@ CARPOOL</text>
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>DONE</text>
@@ -3085,7 +3085,7 @@ CARPOOL</text>
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>DROP_
@@ -3161,7 +3161,7 @@ PASS</text>
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>START
@@ -3746,8 +3746,8 @@ _TRIP</text>
         <transend idref="ID1439955616"/>
         <placeend idref="ID1439954075"/>
         <annot id="ID1439956170">
-          <posattr x="-503.000000"
-                   y="145.000000"/>
+          <posattr x="-515.000000"
+                   y="197.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3959,7 +3959,7 @@ _TRIP</text>
         <transend idref="ID1440112449"/>
         <placeend idref="ID1439954075"/>
         <annot id="ID1440113943">
-          <posattr x="-403.000000"
+          <posattr x="-422.000000"
                    y="35.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3991,8 +3991,8 @@ _TRIP</text>
         <transend idref="ID1440112449"/>
         <placeend idref="ID1440077158"/>
         <annot id="ID1440114446">
-          <posattr x="-272.500000"
-                   y="-37.000000"/>
+          <posattr x="-197.500000"
+                   y="-32.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -4002,7 +4002,11 @@ _TRIP</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">cPool</text>
+                version="4.0.1">((cid,trips,
+charge-dist(#2(hd (#2cPool))
+,(x3,y3))
+,#2(hd (#2cPool)))
+,#2cPool)</text>
         </annot>
       </arc>
       <arc id="ID1440116996"
@@ -4988,9 +4992,9 @@ Do NOT MODIFY thispage.
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1439684063"
-                    panx="229.775000"
-                    pany="-90.715000"
-                    zoom="0.800958"
+                    panx="414.468750"
+                    pany="91.356250"
+                    zoom="1.001198"
                     instance="id246794154ia">
             <zorder>
               <position value="0"/>
