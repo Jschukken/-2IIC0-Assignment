@@ -1974,8 +1974,8 @@ service</text>
                  h="40.000000"/>
         <token x="0.000000"
                y="0.000000"/>
-        <marking x="25.952137"
-                 y="90.157565"
+        <marking x="-10.254506"
+                 y="25.235309"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="3"
@@ -2102,8 +2102,8 @@ service</text>
                   bold="false"/>
         <text>at
 destination</text>
-        <ellipse w="80.000000"
-                 h="40.000000"/>
+        <ellipse w="97.479069"
+                 h="49.988039"/>
         <token x="0.000000"
                y="0.000000"/>
         <marking x="66.420428"
@@ -2114,8 +2114,8 @@ destination</text>
                 anchor.vertical="1"/>
         </marking>
         <type id="id129522250a">
-          <posattr x="213.000000"
-                   y="186.000000"/>
+          <posattr x="219.000000"
+                   y="182.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2128,8 +2128,8 @@ destination</text>
                 version="4.0.1">Goal</text>
         </type>
         <initmark id="id129522250b">
-          <posattr x="231.000000"
-                   y="233.000000"/>
+          <posattr x="237.000000"
+                   y="237.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2143,8 +2143,8 @@ destination</text>
         </initmark>
         <port id="id129522250c"
               type="Out">
-          <posattr x="136.000000"
-                   y="193.000000"/>
+          <posattr x="130.000000"
+                   y="189.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2172,8 +2172,8 @@ _CARS</text>
                  h="40.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="27.966488"
-                 y="-34.958133"
+        <marking x="5.493400"
+                 y="37.455152"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="1"
@@ -2221,8 +2221,8 @@ _CARS</text>
                   bold="false"/>
         <text>CHARGING
 _STATION</text>
-        <ellipse w="60.000000"
-                 h="40.000000"/>
+        <ellipse w="79.976079"
+                 h="52.485049"/>
         <token x="-10.000000"
                y="0.000000"/>
         <marking x="0.000000"
@@ -2233,8 +2233,8 @@ _STATION</text>
                 anchor.vertical="0"/>
         </marking>
         <type id="ID1439897998">
-          <posattr x="-48.000000"
-                   y="661.000000"/>
+          <posattr x="-41.000000"
+                   y="656.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2247,8 +2247,8 @@ _STATION</text>
                 version="4.0.1">Car</text>
         </type>
         <initmark id="ID1439897999">
-          <posattr x="-27.000000"
-                   y="708.000000"/>
+          <posattr x="-20.000000"
+                   y="713.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2274,20 +2274,20 @@ _STATION</text>
                   bold="false"/>
         <text>CHARGE
 _LIMIT</text>
-        <ellipse w="60.000000"
-                 h="43.995214"/>
+        <ellipse w="69.988039"
+                 h="51.486243"/>
         <token x="-75.921027"
                y="27.966496"/>
-        <marking x="-36.223377"
-                 y="-5.977265"
+        <marking x="-14.000000"
+                 y="0.000000"
                  hidden="false">
-          <snap snap_id="0"
+          <snap snap_id="1"
                 anchor.horizontal="2"
                 anchor.vertical="2"/>
         </marking>
         <type id="ID1439903356">
-          <posattr x="-403.500000"
-                   y="659.000000"/>
+          <posattr x="-400.500000"
+                   y="656.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2300,8 +2300,8 @@ _LIMIT</text>
                 version="4.0.1">Timed</text>
         </type>
         <initmark id="ID1439903357">
-          <posattr x="-403.500000"
-                   y="720.000000"/>
+          <posattr x="-398.505980"
+                   y="723.745515"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2326,8 +2326,8 @@ _LIMIT</text>
         <textattr colour="Black"
                   bold="false"/>
         <text>CARPOOLS</text>
-        <ellipse w="60.000000"
-                 h="40.000000"/>
+        <ellipse w="74.982059"
+                 h="52.485049"/>
         <token x="-10.000000"
                y="0.000000"/>
         <marking x="41.200642"
@@ -2338,8 +2338,8 @@ _LIMIT</text>
                 anchor.vertical="1"/>
         </marking>
         <type id="ID1439954076">
-          <posattr x="-466.500000"
-                   y="0.000000"/>
+          <posattr x="-461.500000"
+                   y="-5.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2352,8 +2352,8 @@ _LIMIT</text>
                 version="4.0.1">CarPool</text>
         </type>
         <initmark id="ID1439954077">
-          <posattr x="-459.000000"
-                   y="47.000000"/>
+          <posattr x="-454.000000"
+                   y="52.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2378,20 +2378,20 @@ _LIMIT</text>
         <textattr colour="Black"
                   bold="false"/>
         <text>TRAVELING</text>
-        <ellipse w="60.000000"
-                 h="40.000000"/>
+        <ellipse w="79.976079"
+                 h="54.982059"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="0.000000"
-                 y="0.000000"
+        <marking x="71.164780"
+                 y="-39.952157"
                  hidden="false">
           <snap snap_id="0"
-                anchor.horizontal="0"
-                anchor.vertical="0"/>
+                anchor.horizontal="3"
+                anchor.vertical="1"/>
         </marking>
         <type id="ID1440077159">
-          <posattr x="-34.500000"
-                   y="0.000000"/>
+          <posattr x="-27.500000"
+                   y="-6.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2404,8 +2404,8 @@ _LIMIT</text>
                 version="4.0.1">CarPool</text>
         </type>
         <initmark id="ID1440077160">
-          <posattr x="-27.000000"
-                   y="47.000000"/>
+          <posattr x="-20.000000"
+                   y="53.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2431,8 +2431,8 @@ _LIMIT</text>
                   bold="false"/>
         <text>CAR_
 ARRIVAL</text>
-        <ellipse w="60.000000"
-                 h="40.000000"/>
+        <ellipse w="72.485049"
+                 h="52.485049"/>
         <token x="-10.000000"
                y="0.000000"/>
         <marking x="33.356195"
@@ -2443,8 +2443,8 @@ ARRIVAL</text>
                 anchor.vertical="2"/>
         </marking>
         <type id="ID1440167664">
-          <posattr x="-258.000000"
-                   y="186.000000"/>
+          <posattr x="-254.000000"
+                   y="181.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2457,8 +2457,8 @@ ARRIVAL</text>
                 version="4.0.1">Car</text>
         </type>
         <initmark id="ID1440167665">
-          <posattr x="-237.000000"
-                   y="233.000000"/>
+          <posattr x="-233.000000"
+                   y="238.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2560,13 +2560,13 @@ CHARGE</text>
                   bold="false"/>
         <text>FINISHED
 _SERVICE</text>
-        <box w="60.000000"
-             h="40.000000"/>
+        <box w="79.976079"
+             h="52.485049"/>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1439688264">
-          <posattr x="104.000000"
-                   y="451.000000"/>
+          <posattr x="94.011961"
+                   y="457.242525"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2579,8 +2579,8 @@ _SERVICE</text>
                 version="4.0.1"/>
         </cond>
         <time id="ID1439688265">
-          <posattr x="187.500000"
-                   y="451.000000"/>
+          <posattr x="197.488039"
+                   y="457.242525"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2593,8 +2593,8 @@ _SERVICE</text>
                 version="4.0.1"/>
         </time>
         <code id="ID1439688266">
-          <posattr x="207.500000"
-                   y="368.000000"/>
+          <posattr x="217.488039"
+                   y="361.757475"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2607,8 +2607,8 @@ _SERVICE</text>
                 version="4.0.1"/>
         </code>
         <priority id="ID1439688268">
-          <posattr x="75.000000"
-                   y="389.000000"/>
+          <posattr x="65.011961"
+                   y="382.757475"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2860,13 +2860,13 @@ andalso trips&lt;120]</text>
                   bold="false"/>
         <text>JOIN_
 CARPOOL</text>
-        <box w="60.000000"
-             h="40.000000"/>
+        <box w="74.982059"
+             h="57.479069"/>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1439976619">
-          <posattr x="-910.000000"
-                   y="48.000000"/>
+          <posattr x="-917.491029"
+                   y="56.739534"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2887,8 +2887,8 @@ andalso
 (length (#2cPool)) &lt;4]</text>
         </cond>
         <time id="ID1440329300">
-          <posattr x="-711.500000"
-                   y="55.000000"/>
+          <posattr x="-704.008971"
+                   y="63.739534"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2901,8 +2901,8 @@ andalso
                 version="4.0.1"/>
         </time>
         <code id="ID1439998475">
-          <posattr x="-691.500000"
-                   y="-28.000000"/>
+          <posattr x="-684.008971"
+                   y="-36.739534"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2915,8 +2915,8 @@ andalso
                 version="4.0.1"/>
         </code>
         <priority id="ID1439955896">
-          <posattr x="-814.000000"
-                   y="-7.000000"/>
+          <posattr x="-821.491029"
+                   y="-15.739534"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2943,13 +2943,13 @@ andalso
                   bold="false"/>
         <text>CREATE_
 CARPOOL</text>
-        <box w="60.000000"
-             h="40.000000"/>
+        <box w="72.485049"
+             h="52.485049"/>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1440051407">
-          <posattr x="-411.500000"
-                   y="336.000000"/>
+          <posattr x="-405.257475"
+                   y="342.242525"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2964,8 +2964,8 @@ CARPOOL</text>
 +dist((x2,y2),(1,1))]</text>
         </cond>
         <time id="ID1439955618">
-          <posattr x="-408.500000"
-                   y="250.000000"/>
+          <posattr x="-402.257475"
+                   y="256.242525"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2978,8 +2978,8 @@ CARPOOL</text>
                 version="4.0.1">@+(3*dist((x1,y1),(x3,y3))+1)</text>
         </time>
         <code id="ID1439955619">
-          <posattr x="-451.500000"
-                   y="158.000000"/>
+          <posattr x="-445.257475"
+                   y="151.757475"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2992,8 +2992,8 @@ CARPOOL</text>
                 version="4.0.1"/>
         </code>
         <priority id="ID1439955621">
-          <posattr x="-584.000000"
-                   y="179.000000"/>
+          <posattr x="-590.242525"
+                   y="172.757475"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3294,7 +3294,7 @@ _TRIP</text>
         <transend idref="ID1439688263"/>
         <placeend idref="id195917054"/>
         <annot id="ID1439688932">
-          <posattr x="218.000000"
+          <posattr x="223.000000"
                    y="431.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3326,7 +3326,7 @@ _TRIP</text>
         <transend idref="ID1439688263"/>
         <placeend idref="ID1439684248"/>
         <annot id="ID1439689105">
-          <posattr x="27.000000"
+          <posattr x="22.000000"
                    y="409.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3403,7 +3403,7 @@ _TRIP</text>
         <transend idref="ID1439898026"/>
         <placeend idref="ID1439897997"/>
         <annot id="ID1439898287">
-          <posattr x="31.000000"
+          <posattr x="36.000000"
                    y="696.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3467,7 +3467,7 @@ _TRIP</text>
         <transend idref="ID1439903176"/>
         <placeend idref="ID1439897997"/>
         <annot id="ID1439903537">
-          <posattr x="-183.000000"
+          <posattr x="-187.000000"
                    y="650.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3531,7 +3531,7 @@ _TRIP</text>
         <transend idref="ID1439903176"/>
         <placeend idref="ID1439903355"/>
         <annot id="ID1439941072">
-          <posattr x="-357.000000"
+          <posattr x="-354.000000"
                    y="689.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3563,7 +3563,7 @@ _TRIP</text>
         <transend idref="ID1439903176"/>
         <placeend idref="ID1439903355"/>
         <annot id="ID1439941073">
-          <posattr x="-357.000000"
+          <posattr x="-354.000000"
                    y="703.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3685,7 +3685,7 @@ _TRIP</text>
         <transend idref="ID1439955891"/>
         <placeend idref="ID1439954075"/>
         <annot id="ID1439956723">
-          <posattr x="-637.000000"
+          <posattr x="-637.500000"
                    y="-1.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3751,7 +3751,7 @@ _TRIP</text>
         <placeend idref="ID1439954075"/>
         <annot id="ID1439956170">
           <posattr x="-513.000000"
-                   y="129.000000"/>
+                   y="128.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3783,7 +3783,7 @@ _TRIP</text>
         <transend idref="ID1440077576"/>
         <placeend idref="ID1440077158"/>
         <annot id="ID1440077792">
-          <posattr x="31.000000"
+          <posattr x="37.500000"
                    y="42.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3815,7 +3815,7 @@ _TRIP</text>
         <transend idref="ID1440077576"/>
         <placeend idref="ID1440077158"/>
         <annot id="ID1440078004">
-          <posattr x="119.000000"
+          <posattr x="120.000000"
                    y="-43.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3827,7 +3827,7 @@ _TRIP</text>
                     bold="false"/>
           <text tool="CPN Tools"
                 version="4.0.1">((#1(#1cPool)
-,#2(#1cPool)
+,#2(#1cPool)+1
 ,#3(#1cPool)-dist(#4(#1cPool),#3(hd (#2cPool)))
 ,#3(hd(#2cPool)))
 ,tl (#2cPool))</text>
@@ -3852,7 +3852,7 @@ _TRIP</text>
         <placeend idref="ID1440077158"/>
         <annot id="ID1440078219">
           <posattr x="-63.500000"
-                   y="108.000000"/>
+                   y="112.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3884,7 +3884,7 @@ _TRIP</text>
         <placeend idref="id129522250"/>
         <annot id="ID1440102296">
           <posattr x="168.000000"
-                   y="116.000000"/>
+                   y="114.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3950,7 +3950,7 @@ _TRIP</text>
         <transend idref="ID1440112449"/>
         <placeend idref="ID1439954075"/>
         <annot id="ID1440113943">
-          <posattr x="-422.000000"
+          <posattr x="-417.000000"
                    y="35.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -3982,7 +3982,7 @@ _TRIP</text>
         <transend idref="ID1440112449"/>
         <placeend idref="ID1440077158"/>
         <annot id="ID1440114446">
-          <posattr x="-188.000000"
+          <posattr x="-193.000000"
                    y="-37.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -4019,7 +4019,7 @@ charge-dist(#2(hd (#2cPool))
         <placeend idref="id206969054"/>
         <annot id="ID1440116997">
           <posattr x="-822.500000"
-                   y="159.000000"/>
+                   y="161.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -4050,7 +4050,7 @@ charge-dist(#2(hd (#2cPool))
         <transend idref="ID1439955616"/>
         <placeend idref="id206969054"/>
         <annot id="ID1440118563">
-          <posattr x="-635.000000"
+          <posattr x="-638.000000"
                    y="199.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -4127,7 +4127,7 @@ charge-dist(#2(hd (#2cPool))
         <transend idref="ID1440077364"/>
         <placeend idref="id129522250"/>
         <annot id="ID1440149099">
-          <posattr x="64.000000"
+          <posattr x="58.000000"
                    y="262.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -4192,7 +4192,7 @@ charge-dist(#2(hd (#2cPool))
         <placeend idref="ID1440167663"/>
         <annot id="ID1440169937">
           <posattr x="-298.000000"
-                   y="136.000000"/>
+                   y="132.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -4723,7 +4723,7 @@ Do NOT MODIFY thispage.
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4738,7 +4738,7 @@ Do NOT MODIFY thispage.
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10005.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4971,7 +4971,7 @@ Do NOT MODIFY thispage.
           </cpnsheet>
           <cpnsheet id="ID1439684063"
                     panx="189.775000"
-                    pany="240.685000"
+                    pany="249.685000"
                     zoom="0.800958"
                     instance="id246794154ia">
             <zorder>
