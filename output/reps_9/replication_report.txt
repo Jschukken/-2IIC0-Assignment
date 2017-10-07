@@ -1,0 +1,214 @@
+CPN Tools report for simulation replications
+Net: /cygdrive/D/Users/Jelle Schukken/Documents/Tue/Year 3/Q1/Buisness Info Systems/-2IIC0-Assignment/#baseModel_ID0976141.cpn
+Output directory: /cygdrive/D/Users/Jelle Schukken/Documents/Tue/Year 3/Q1/Buisness Info Systems/-2IIC0-Assignment/output/reps_9
+
+Simulation no.: 1
+Steps.........: 1005
+Model time....: 6642.03438677
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 2
+Steps.........: 1005
+Model time....: 6720.59806063
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 3
+Steps.........: 1005
+Model time....: 7007.033804
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 4
+Steps.........: 1005
+Model time....: 6692.34887595
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 5
+Steps.........: 1005
+Model time....: 6891.48156751
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 6
+Steps.........: 1005
+Model time....: 6554.3859394
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 7
+Steps.........: 1005
+Model time....: 6636.44943078
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 8
+Steps.........: 1005
+Model time....: 6360.65493758
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 9
+Steps.........: 1005
+Model time....: 6781.01273261
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 10
+Steps.........: 1005
+Model time....: 6662.43215907
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 11
+Steps.........: 1005
+Model time....: 7016.63874571
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 12
+Steps.........: 1005
+Model time....: 6608.94103466
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 13
+Steps.........: 1005
+Model time....: 6716.41568296
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 14
+Steps.........: 1005
+Model time....: 6600.76749128
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 15
+Steps.........: 1005
+Model time....: 6658.74388211
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 16
+Steps.........: 1005
+Model time....: 6630.42872283
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 17
+Steps.........: 1005
+Model time....: 6759.33553882
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 18
+Steps.........: 1005
+Model time....: 6562.95770156
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 19
+Steps.........: 1005
+Model time....: 6496.96666787
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 20
+Steps.........: 1005
+Model time....: 6730.29616419
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 21
+Steps.........: 1005
+Model time....: 6939.98595784
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 22
+Steps.........: 1005
+Model time....: 6375.98611567
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 23
+Steps.........: 1005
+Model time....: 6710.78319719
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 24
+Steps.........: 1005
+Model time....: 6866.6496575
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 25
+Steps.........: 1005
+Model time....: 6871.70640187
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 26
+Steps.........: 1005
+Model time....: 6780.28363751
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 27
+Steps.........: 1005
+Model time....: 6818.7809578
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 28
+Steps.........: 1005
+Model time....: 6839.05429322
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 29
+Steps.........: 1005
+Model time....: 7242.22046661
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 30
+Steps.........: 1005
+Model time....: 6631.71174971
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+

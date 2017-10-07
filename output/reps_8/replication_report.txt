@@ -1,0 +1,244 @@
+CPN Tools report for simulation replications
+Net: /cygdrive/D/Users/Jelle Schukken/Documents/Tue/Year 3/Q1/Buisness Info Systems/-2IIC0-Assignment/#baseModel_ID0976141.cpn
+Output directory: /cygdrive/D/Users/Jelle Schukken/Documents/Tue/Year 3/Q1/Buisness Info Systems/-2IIC0-Assignment/output/reps_8
+
+Simulation no.: 1
+Steps.........: 500
+Model time....: 823.858133372
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 2
+Steps.........: 500
+Model time....: 930.195631912
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 3
+Steps.........: 500
+Model time....: 941.929598353
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 4
+Steps.........: 500
+Model time....: 775.58951386
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 5
+Steps.........: 500
+Model time....: 933.831299582
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 6
+Steps.........: 500
+Model time....: 794.350053316
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 7
+Steps.........: 500
+Model time....: 867.934070739
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 8
+Steps.........: 500
+Model time....: 861.101566955
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 9
+Steps.........: 500
+Model time....: 802.267865743
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 10
+Steps.........: 500
+Model time....: 931.740615722
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 11
+Steps.........: 500
+Model time....: 1017.55481609
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 12
+Steps.........: 500
+Model time....: 946.205679713
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 13
+Steps.........: 500
+Model time....: 835.943711261
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 14
+Steps.........: 500
+Model time....: 1031.8591331
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 15
+Steps.........: 500
+Model time....: 771.441746292
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 16
+Steps.........: 500
+Model time....: 812.192522373
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 17
+Steps.........: 500
+Model time....: 941.029338862
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 18
+Steps.........: 500
+Model time....: 999.258954372
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 19
+Steps.........: 500
+Model time....: 904.635383529
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 20
+Steps.........: 500
+Model time....: 768.132420054
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 21
+Steps.........: 500
+Model time....: 856.790896198
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 22
+Steps.........: 500
+Model time....: 792.164961335
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 23
+Steps.........: 500
+Model time....: 712.587744965
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 24
+Steps.........: 500
+Model time....: 951.171860448
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 25
+Steps.........: 500
+Model time....: 820.534345325
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 26
+Steps.........: 500
+Model time....: 824.494481066
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 27
+Steps.........: 500
+Model time....: 803.000557357
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 28
+Steps.........: 500
+Model time....: 828.429474321
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 29
+Steps.........: 500
+Model time....: 776.153624657
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 30
+Steps.........: 500
+Model time....: 780.817599058
+Stop reason...: The following stop criteria are fulfilled:
+ - Additional Steps 500
+Time to run simulation: 0 seconds
+
+

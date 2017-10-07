@@ -1,0 +1,25 @@
+#name, percent, n, avrg, half length, lower ci endpoint, upper ci endpoint
+
+Cars_in_service_avrg_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Cars_in_service_count_iid 90 30 7.000000 0.000000 7.000000 7.000000
+Cars_in_service_max_iid 90 30 5.000000 0.000000 5.000000 5.000000
+Cars_in_service_min_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Passengers_on_trip_avrg_iid 90 30 498.821622 3.169231 501.990852 495.652391
+Passengers_on_trip_count_iid 90 30 1002.000000 0.000000 1002.000000 1002.000000
+Passengers_on_trip_max_iid 90 30 1000.000000 0.000000 1000.000000 1000.000000
+Passengers_on_trip_min_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_1_to_3_avrg_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_1_to_3_count_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_1_to_3_max_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_1_to_3_min_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_1_to_3_sum_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_4_to_6_avrg_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_4_to_6_count_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_4_to_6_max_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_4_to_6_min_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_dist_4_to_6_sum_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_too_long_avrg_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_too_long_count_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_too_long_max_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_too_long_min_iid 90 30 0.000000 0.000000 0.000000 0.000000
+Travel_time_too_long_sum_iid 90 30 0.000000 0.000000 0.000000 0.000000
