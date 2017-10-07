@@ -151,14 +151,6 @@
           </product>
           <layout>colset Car = product cID * INT * INT* Loc timed;</layout>
         </color>
-        <color id="ID1439824725">
-          <id>BusyCar</id>
-          <product>
-            <id>pID</id>
-            <id>Car</id>
-          </product>
-          <layout>colset BusyCar = product pID*Car;</layout>
-        </color>
         <color id="ID1439953091">
           <id>CarPool</id>
           <product>
@@ -166,13 +158,6 @@
             <id>TripList</id>
           </product>
           <layout>colset CarPool = product Car * TripList;</layout>
-        </color>
-        <color id="ID1439977973">
-          <id>CarPoolList</id>
-          <list>
-            <id>CarPool</id>
-          </list>
-          <layout>colset CarPoolList = list CarPool;</layout>
         </color>
       </block>
       <block id="idblock610">
@@ -2579,7 +2564,7 @@ _SERVICE</text>
                 version="4.0.1"/>
         </cond>
         <time id="ID1439688265">
-          <posattr x="197.488039"
+          <posattr x="197.488040"
                    y="457.242525"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2593,8 +2578,8 @@ _SERVICE</text>
                 version="4.0.1"/>
         </time>
         <code id="ID1439688266">
-          <posattr x="217.488039"
-                   y="361.757475"/>
+          <posattr x="217.488040"
+                   y="361.757476"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2608,7 +2593,7 @@ _SERVICE</text>
         </code>
         <priority id="ID1439688268">
           <posattr x="65.011961"
-                   y="382.757475"/>
+                   y="382.757476"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2866,7 +2851,7 @@ CARPOOL</text>
                  y="-3.000000"/>
         <cond id="ID1439976619">
           <posattr x="-917.491029"
-                   y="56.739534"/>
+                   y="56.739535"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2888,7 +2873,7 @@ andalso
         </cond>
         <time id="ID1440329300">
           <posattr x="-704.008971"
-                   y="63.739534"/>
+                   y="63.739535"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2902,7 +2887,7 @@ andalso
         </time>
         <code id="ID1439998475">
           <posattr x="-684.008971"
-                   y="-36.739534"/>
+                   y="-36.739535"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2916,7 +2901,7 @@ andalso
         </code>
         <priority id="ID1439955896">
           <posattr x="-821.491029"
-                   y="-15.739534"/>
+                   y="-15.739535"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2978,8 +2963,8 @@ CARPOOL</text>
                 version="4.0.1">@+(3*dist((x1,y1),(x3,y3))+1)</text>
         </time>
         <code id="ID1439955619">
-          <posattr x="-445.257475"
-                   y="151.757475"/>
+          <posattr x="-445.257476"
+                   y="151.757476"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2992,8 +2977,8 @@ CARPOOL</text>
                 version="4.0.1"/>
         </code>
         <priority id="ID1439955621">
-          <posattr x="-590.242525"
-                   y="172.757475"/>
+          <posattr x="-590.242524"
+                   y="172.757476"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -3685,7 +3670,7 @@ _TRIP</text>
         <transend idref="ID1439955891"/>
         <placeend idref="ID1439954075"/>
         <annot id="ID1439956723">
-          <posattr x="-637.500000"
+          <posattr x="-638.000000"
                    y="-1.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -4710,12 +4695,12 @@ Do NOT MODIFY thispage.
       </option>
       <option name="fair_be">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="global_fairness">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="outputdirectory">
@@ -4723,7 +4708,7 @@ Do NOT MODIFY thispage.
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10005.enable">
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4733,7 +4718,7 @@ Do NOT MODIFY thispage.
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10003.enable">
+      <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -4743,19 +4728,19 @@ Do NOT MODIFY thispage.
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
       <option name="repavg">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="repciavg">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="repcount">
@@ -4775,12 +4760,12 @@ Do NOT MODIFY thispage.
       </option>
       <option name="repmax">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="repmin">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="repssquare">
@@ -4795,7 +4780,7 @@ Do NOT MODIFY thispage.
       </option>
       <option name="repstddev">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="repsum">
@@ -4810,17 +4795,17 @@ Do NOT MODIFY thispage.
       </option>
       <option name="avg">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="ciavg">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="count">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="firstval">
@@ -4835,12 +4820,12 @@ Do NOT MODIFY thispage.
       </option>
       <option name="max">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="min">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="ssquare">
@@ -4855,7 +4840,7 @@ Do NOT MODIFY thispage.
       </option>
       <option name="stddev">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="sum">
@@ -4885,7 +4870,7 @@ Do NOT MODIFY thispage.
       </option>
       <option name="untimedavg">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="untimedciavg">
@@ -4895,7 +4880,7 @@ Do NOT MODIFY thispage.
       </option>
       <option name="untimedcount">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="untimedfirstval">
@@ -4910,12 +4895,12 @@ Do NOT MODIFY thispage.
       </option>
       <option name="untimedmax">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="untimedmin">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="untimedssquare">
@@ -4935,7 +4920,7 @@ Do NOT MODIFY thispage.
       </option>
       <option name="untimedsum">
         <value>
-          <boolean>false</boolean>
+          <boolean>true</boolean>
         </value>
       </option>
       <option name="untimedvariance">
@@ -4946,10 +4931,10 @@ Do NOT MODIFY thispage.
     </options>
     <binders>
       <cpnbinder id="ID1439684050"
-                 x="375"
-                 y="37"
-                 width="1289"
-                 height="983">
+                 x="505"
+                 y="32"
+                 width="942"
+                 height="965">
         <sheets>
           <cpnsheet id="ID1439684089"
                     panx="-783.000000"
@@ -4961,8 +4946,8 @@ Do NOT MODIFY thispage.
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1439684032"
-                    panx="72.000000"
-                    pany="332.000000"
+                    panx="260.000000"
+                    pany="239.000000"
                     zoom="1.000000"
                     instance="id67393907ia">
             <zorder>
@@ -4970,8 +4955,8 @@ Do NOT MODIFY thispage.
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1439684063"
-                    panx="189.775000"
-                    pany="249.685000"
+                    panx="183.775000"
+                    pany="199.685000"
                     zoom="0.800958"
                     instance="id246794154ia">
             <zorder>
@@ -5137,56 +5122,56 @@ end</ml>
     <IndexNode expanded="true">
       <IndexNode expanded="false"/>
       <IndexNode expanded="false"/>
-      <IndexNode expanded="false">
+      <IndexNode expanded="true">
         <IndexNode expanded="false"/>
+        <IndexNode expanded="true"/>
+        <IndexNode expanded="true"/>
         <IndexNode expanded="false"/>
-        <IndexNode expanded="false"/>
-        <IndexNode expanded="false"/>
-        <IndexNode expanded="false">
-          <IndexNode expanded="false">
-            <IndexNode expanded="false">
+        <IndexNode expanded="true">
+          <IndexNode expanded="true">
+            <IndexNode expanded="true">
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="true"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="true"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
             </IndexNode>
-            <IndexNode expanded="false">
+            <IndexNode expanded="true">
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="true"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
               <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
-              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
               <IndexNode expanded="false"/>
             </IndexNode>
           </IndexNode>
-          <IndexNode expanded="false">
+          <IndexNode expanded="true">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
             <IndexNode expanded="false"/>
             <IndexNode expanded="false"/>
             <IndexNode expanded="false"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
             <IndexNode expanded="false"/>
             <IndexNode expanded="false"/>
-            <IndexNode expanded="false"/>
-            <IndexNode expanded="false"/>
-            <IndexNode expanded="false"/>
-            <IndexNode expanded="false"/>
-            <IndexNode expanded="false"/>
+            <IndexNode expanded="true"/>
             <IndexNode expanded="false"/>
             <IndexNode expanded="false"/>
           </IndexNode>
@@ -5202,7 +5187,7 @@ end</ml>
       <IndexNode expanded="false">
         <IndexNode expanded="false"/>
       </IndexNode>
-      <IndexNode expanded="true">
+      <IndexNode expanded="false">
         <IndexNode expanded="true">
           <IndexNode expanded="true"/>
           <IndexNode expanded="false"/>
@@ -5226,8 +5211,6 @@ end</ml>
           <IndexNode expanded="true"/>
         </IndexNode>
         <IndexNode expanded="true">
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
@@ -5260,11 +5243,11 @@ end</ml>
         </IndexNode>
       </IndexNode>
       <IndexNode expanded="true">
-        <IndexNode expanded="false">
-          <IndexNode expanded="false">
+        <IndexNode expanded="true">
+          <IndexNode expanded="true">
             <IndexNode expanded="false"/>
           </IndexNode>
-          <IndexNode expanded="false">
+          <IndexNode expanded="true">
             <IndexNode expanded="true">
               <IndexNode expanded="true"/>
               <IndexNode expanded="false"/>
@@ -5272,7 +5255,7 @@ end</ml>
             </IndexNode>
           </IndexNode>
         </IndexNode>
-        <IndexNode expanded="false">
+        <IndexNode expanded="true">
           <IndexNode expanded="false">
             <IndexNode expanded="false"/>
           </IndexNode>
@@ -5284,7 +5267,7 @@ end</ml>
             </IndexNode>
           </IndexNode>
         </IndexNode>
-        <IndexNode expanded="false">
+        <IndexNode expanded="true">
           <IndexNode expanded="true">
             <IndexNode expanded="false"/>
             <IndexNode expanded="false"/>

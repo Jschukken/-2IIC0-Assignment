@@ -1,0 +1,21 @@
+reset
+load "gnuplot/Travel_time_dist_4_to_6.gpl"
+pause -1 "Travel_time_dist_4_to_6"
+
+reset
+load "gnuplot/Travel_time_dist_1_to_3.gpl"
+pause -1 "Travel_time_dist_1_to_3"
+
+reset
+load "gnuplot/Travel_time_too_long.gpl"
+pause -1 "Travel_time_too_long"
+
+reset
+load "gnuplot/Cars_in_service.gpl"
+pause -1 "Cars_in_service"
+
+reset
+load "gnuplot/Passengers_on_trip.gpl"
+pause -1 "Passengers_on_trip"
+
+pause -1 "Done"
